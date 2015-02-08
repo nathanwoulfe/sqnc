@@ -1,39 +1,13 @@
-﻿<div class="artist">
-    <h1>{{name}}</h1>
+<h1><span>S</span><span>Q</span><span>N</span><span>C</span></h1>
+<div class="game-controls">
+	<div class="btn-group">
+		<button class="btn btn-lg" ng-model="difficulty" ng-click="init(3)">easy</button>
+		<button class="btn btn-lg" ng-model="difficulty" ng-click="init(4)">hard</button>
+		<button class="btn btn-lg" ng-model="difficulty" ng-click="init(5)">nuts</button>
+	</div>
+	<div ng-if="score!=0" class="score-display">
+		<h3>{{score}}</h3>
 
-    <p class="bio intro">{{bioIntro}}</p>
-    <div class="bio-extended">
-        <p class="expand" ng-click="expandBio()">More</p>
-        <div class="bio-content">  
-            <p class="bio" ng-repeat="p in bioText track by $index">{{p}}</p>
-            <p class="attrib">{{bioSite|attr}}</p>
-        </div>
-    </div>
-
-  
-    <h2>Video</h2>
-    <iframe src="#" class="hidden" id="video" type='text/html' width='720' height='435' frameborder='0'></iframe>
-    <ul class="video-ul">
-        <li ng-repeat="y in youtube">
-            <a ng-click="showVideo(y.id.videoId)"><img ng-src="{{y.id.videoId|youtubeImg}}" /></a>  
-            <!--img ng-repeat="v in videos" ng-src="{{v.url.substring(v.url.indexOf('v=') + 2, v.url.indexOf('&'))|youtubeImg}}" ng-data-video="{{v.url.substring(vid.url.indexOf('v=') + 2, vid.url.indexOf('&'))}}" width="200"/-->
-        </li>
-    </ul>
-    
-    <h2>Groups</h2>
-    <ul class="block-ul">
-        <li ng-repeat="g in groups" data-id="{{g.id}}"><a href="/#/group/{{g.group|underscores}}">{{g.group.replace('amp;','')}}</a></li>
-    </ul>
-
-    <h2>Genre</h2>
-    <ul class="block-ul">
-        <li ng-repeat="g in genres"><a href="/#/genre/{{g.name|underscores}}">{{g.name}}</a></li>
-    </ul> 
-    
-    <h2>Similar</h2>
-    <ul class="block-ul">
-        <li ng-repeat="s in similar"><a href="/#/artist/{{s|underscores}}">{{s}}</a></li>
-    </ul>
-
- 
+	</div>
 </div>
+

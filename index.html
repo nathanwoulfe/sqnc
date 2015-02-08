@@ -1,31 +1,30 @@
-<!doctype html>
-<html lang="en" ng-app="eadgbeApp">
+<!DOCTYPE html>
+<html lang="en" ng-app="sqnc">
+
 <head>
-    <meta charset="utf-8">
-    <title></title>
-    <!--link rel="stylesheet" href="css/bootstrap.min.css"-->
-    <link rel="stylesheet" href="css/app.css">
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.js"></script>
-    <script src="js/lib/angular/angular.js"></script>
-    <script src="js/lib/angular/angular-resource.js"></script>
-    <script src="js/lib/angular/angular-route.js"></script>
-    <script src="js/lib/xml2json.min.js"></script>
-    <script src="js/lib/jquery.lightbox_me.js"></script>
-    <script src="js/lib/slabtext.min.js"></script>
-    <script src="js/lib/date.js"></script>
-    <script src="js/app.js"></script>
-    <script src="js/controllers.js"></script>
-    <script src="js/filters.js"></script>
-    <script src="js/services.js"></script>
+	<meta charset="utf-8">
+	<title></title>
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+	<link href='http://fonts.googleapis.com/css?family=PT+Mono' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="css/app.css">
 </head>
-<body ng-cloak>
-    <div id="fb-root">
-    </div>
-    <div class="wrapper">
-        <div class="view-container">
-            <div ng-view class="view-frame">
-            </div>
-        </div>
-    </div>
+
+<body>
+
+	<div class="container slideup" ng-view></div>
+
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.10/angular.js"></script>
+
+	<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.16/angular-resource.min.js"></script>
+	<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.16/angular-route.min.js"></script>
+	<script src="js/lib/angular/angular-animate.min.js"></script>
+
+	<script src="js/app.js"></script>
+	<script src="js/controllers.js"></script>
+	<script src="js/directives.js"></script>
+	<script src="js/animations.js"></script>
 </body>
+
 </html>

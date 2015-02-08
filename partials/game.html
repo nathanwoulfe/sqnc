@@ -1,0 +1,7 @@
+<div class="game-board">
+	<h2>Level {{currentLevel}}</h2>
+	<span class="prompt" ng-bind="promptText"></span>
+	<div pulsator class="row" id="{{i}}" ng-model="tiles" ng-click="logMove(i)" ng-repeat="i in tiles"></div>
+	<h3 class="score">{{score}}</h3>
+	<button class="btn btn-sm back-btn" ng-click="reset()">quit</button>
+</div>
